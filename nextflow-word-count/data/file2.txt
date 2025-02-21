@@ -1,0 +1,3 @@
+Un altro file di test.
+Con contenuto diverso.
+Per testare il parallelismo.
