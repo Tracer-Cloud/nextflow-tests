@@ -1,0 +1,4 @@
+File analysis: file1
+Total lines:        3
+Total words:       13
+Unique words:       13

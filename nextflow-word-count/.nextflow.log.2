@@ -1,0 +1,15 @@
+Feb-21 17:55:19.577 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Feb-21 17:55:19.610 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Feb-21 17:55:19.628 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/micheleverriello/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Feb-21 17:55:19.652 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-21 17:55:19.653 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-21 17:55:19.654 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-21 17:55:19.660 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-21 17:55:19.694 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 by probing script field
+Feb-21 17:55:19.697 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Nextflow DSL1 is no longer supported — Update your script to DSL2, or use Nextflow 22.10.x or earlier
+	at nextflow.NextflowMeta.enableDsl(NextflowMeta.groovy:156)
+	at nextflow.cli.CmdRun.launchInfo(CmdRun.groovy:428)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:335)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)

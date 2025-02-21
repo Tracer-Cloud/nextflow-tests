@@ -1,5 +1,7 @@
 #!/usr/bin/env nextflow
 
+nextflow.enable.dsl=2
+
 // Pipeline parameters
 params.input = "$baseDir/data/*.txt"
 params.output = "$baseDir/results"
@@ -12,18 +14,13 @@ log.info """\
          output: ${params.output}
          """
 
-// Define the input channel
-Channel
-    .fromPath(params.input)
-    .set { text_files }
-
 // Process to count words
 process countWords {
     tag "counting ${file.baseName}"
     publishDir params.output, mode: 'copy'
 
     input:
-    path file from text_files
+    path file
 
     output:
     path "${file.baseName}_counts.txt"
@@ -37,6 +34,16 @@ process countWords {
     """
 }
 
+// Main workflow
+workflow {
+    // Define the input channel
+    text_files = Channel.fromPath(params.input)
+    
+    // Execute the process
+    countWords(text_files)
+}
+
+// Completion handler
 workflow.onComplete {
     log.info "Pipeline completed at: $workflow.complete"
     log.info "Execution status: ${ workflow.success ? 'SUCCESS' : 'FAILED' }"
