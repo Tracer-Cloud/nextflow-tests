@@ -1,15 +1,71 @@
-Feb-21 17:55:19.577 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-Feb-21 17:55:19.610 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
-Feb-21 17:55:19.628 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/micheleverriello/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
-Feb-21 17:55:19.652 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Feb-21 17:55:19.653 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Feb-21 17:55:19.654 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Feb-21 17:55:19.660 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Feb-21 17:55:19.694 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 by probing script field
-Feb-21 17:55:19.697 [main] DEBUG nextflow.cli.Launcher - Operation aborted
-nextflow.exception.AbortOperationException: Nextflow DSL1 is no longer supported — Update your script to DSL2, or use Nextflow 22.10.x or earlier
-	at nextflow.NextflowMeta.enableDsl(NextflowMeta.groovy:156)
-	at nextflow.cli.CmdRun.launchInfo(CmdRun.groovy:428)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:335)
-	at nextflow.cli.Launcher.run(Launcher.groovy:503)
-	at nextflow.cli.Launcher.main(Launcher.groovy:658)
+Feb-21 17:56:48.231 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Feb-21 17:56:48.267 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Feb-21 17:56:48.283 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/micheleverriello/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Feb-21 17:56:48.307 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-21 17:56:48.307 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-21 17:56:48.309 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-21 17:56:48.315 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-21 17:56:48.347 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Feb-21 17:56:48.357 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [tiny_swirles] DSL2 - revision: 3a370741eb
+Feb-21 17:56:48.358 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-21 17:56:48.358 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-21 17:56:48.394 [main] DEBUG nextflow.Session - Session UUID: 1a91d435-794f-43a7-8132-c9184997d274
+Feb-21 17:56:48.394 [main] DEBUG nextflow.Session - Run name: tiny_swirles
+Feb-21 17:56:48.394 [main] DEBUG nextflow.Session - Executor pool size: 12
+Feb-21 17:56:48.399 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-21 17:56:48.402 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Feb-21 17:56:48.422 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.4 build 5934
+  Created: 20-01-2025 16:47 UTC (16:47 BST)
+  System: Mac OS X 15.3.1
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 23.0.2
+  Encoding: UTF-8 (UTF-8)
+  Process: 32982@Micheles-MacBook-Pro.local [127.0.0.1]
+  CPUs: 12 - Mem: 32 GB (90 MB) - Swap: 0 (0)
+Feb-21 17:56:48.432 [main] DEBUG nextflow.Session - Work-dir: /Users/micheleverriello/nextflow-tests/nextflow-word-count/work [Mac OS X]
+Feb-21 17:56:48.432 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/micheleverriello/nextflow-tests/nextflow-word-count/bin
+Feb-21 17:56:48.440 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-21 17:56:48.445 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Feb-21 17:56:48.459 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-21 17:56:48.464 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Feb-21 17:56:48.492 [main] DEBUG nextflow.Session - Session start
+Feb-21 17:56:48.785 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-21 17:56:48.790 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/micheleverriello/.nextflow/secrets/store.json
+Feb-21 17:56:48.797 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6babffb5] - activable => nextflow.secret.LocalSecretsProvider@6babffb5
+Feb-21 17:56:48.801 [main] INFO  nextflow.Nextflow -          WORD COUNT PIPELINE
+         ==================
+         input : /Users/micheleverriello/nextflow-tests/nextflow-word-count/data/*.txt
+         output: /Users/micheleverriello/nextflow-tests/nextflow-word-count/results
+         
+Feb-21 17:56:48.850 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-21 17:56:48.850 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-21 17:56:48.853 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Feb-21 17:56:48.857 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=32 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Feb-21 17:56:48.858 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Feb-21 17:56:48.892 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: countWords
+Feb-21 17:56:48.893 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Feb-21 17:56:48.896 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > countWords
+Feb-21 17:56:48.896 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_50ab3ffa354c7f20: /Users/micheleverriello/nextflow-tests/nextflow-word-count/main.nf
+Feb-21 17:56:48.896 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/micheleverriello/nextflow-tests/nextflow-word-count/data/; pattern: *.txt; options: [:]
+Feb-21 17:56:48.896 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Feb-21 17:56:48.896 [main] DEBUG nextflow.Session - Session await
+Feb-21 17:56:48.987 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-21 17:56:48.988 [Task submitter] INFO  nextflow.Session - [79/dabe67] Submitted process > countWords (counting file2)
+Feb-21 17:56:48.992 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-21 17:56:48.992 [Task submitter] INFO  nextflow.Session - [ee/ebd3f0] Submitted process > countWords (counting file1)
+Feb-21 17:56:49.016 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: countWords (counting file2); status: COMPLETED; exit: 0; error: -; workDir: /Users/micheleverriello/nextflow-tests/nextflow-word-count/work/79/dabe670a4e64548e554ebc27f96d17]
+Feb-21 17:56:49.016 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Feb-21 17:56:49.018 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: countWords (counting file1); status: COMPLETED; exit: 0; error: -; workDir: /Users/micheleverriello/nextflow-tests/nextflow-word-count/work/ee/ebd3f0a48e0fdde2f95a9d09012c40]
+Feb-21 17:56:49.031 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Feb-21 17:56:49.032 [main] DEBUG nextflow.Session - Session await > all processes finished
+Feb-21 17:56:49.118 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Feb-21 17:56:49.118 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Feb-21 17:56:49.120 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Feb-21 17:56:49.120 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Feb-21 17:56:49.121 [main] INFO  nextflow.Nextflow - Pipeline completed at: 2025-02-21T17:56:49.120551Z
+Feb-21 17:56:49.121 [main] INFO  nextflow.Nextflow - Execution status: SUCCESS
+Feb-21 17:56:49.123 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Feb-21 17:56:49.139 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Feb-21 17:56:49.147 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Feb-21 17:56:49.147 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
