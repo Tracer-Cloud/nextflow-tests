@@ -1,0 +1,5 @@
+File analysis: sample2
+Count of A:        6
+Count of C:        6
+Count of G:        9
+Count of T:        3

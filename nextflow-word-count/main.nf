@@ -45,6 +45,9 @@ process countDNALetters {
 
     # Remove the temporary file with extracted sequences
     rm ${file.baseName}_sequences.txt
+
+    # Sleep for one minute to ensure the pipeline runs for at least 1 minute
+    sleep 60
     """
 }
 
